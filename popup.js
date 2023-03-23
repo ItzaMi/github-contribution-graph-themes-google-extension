@@ -1,17 +1,46 @@
-const button = document.getElementById('red-button');
-const githubUrl = 'https://github.com/';
+const greenButton = document.getElementById('green-button');
+const orangeButton = document.getElementById('orange-button');
+const blueButton = document.getElementById('blue-button');
+const purpleButton = document.getElementById('purple-button');
 
-button.addEventListener('click', async () => {
-  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+const offButton = document.getElementById('off-button');
 
-  await chrome.scripting.insertCSS({
-    files: ['colours.css'],
-    target: { tabId: tab.id },
+const githubUrl = 'github.com';
+
+const reload = () => {
+  chrome.tabs.query({ url: `*://${githubUrl}/*` }, (tabs) => {
+    tabs.forEach((tab) => {
+      chrome.tabs.reload(tab.id);
+    });
   });
+};
 
-  chrome.storage.local.set({ channels: 'yes' });
+offButton.addEventListener('click', () => {
+  chrome.storage.local.set({ theme: 'off' });
 
-  chrome.storage.local.get(['channels'], (result) => {
-    console.log('Value currently is ' + result.channels);
-  });
+  reload();
+});
+
+greenButton.addEventListener('click', () => {
+  chrome.storage.local.set({ theme: 'green' });
+
+  reload();
+});
+
+orangeButton.addEventListener('click', () => {
+  chrome.storage.local.set({ theme: 'orange' });
+
+  reload();
+});
+
+blueButton.addEventListener('click', () => {
+  chrome.storage.local.set({ theme: 'blue' });
+
+  reload();
+});
+
+purpleButton.addEventListener('click', () => {
+  chrome.storage.local.set({ theme: 'purple' });
+
+  reload();
 });
