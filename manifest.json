@@ -16,6 +16,10 @@
     {
       "matches": ["*://*.github.com/*"],
       "js": ["content.js"]
+    },
+    {
+      "matches": ["*://*.github.com/*"],
+      "css": ["colours.css"]
     }
   ],
   "action": {
