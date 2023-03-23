@@ -1,3 +1,79 @@
 .ContributionCalendar-day[data-level='4'] {
-  fill: red !important;
+  background-color: var(--color-calendar-graph-day-L4-bg) !important;
+  border-color: var(--color-calendar-graph-day-L4-bg) !important;
+  fill: var(--color-calendar-graph-day-L4-bg) !important;
+}
+
+.ContributionCalendar-day[data-level='3'] {
+  background-color: var(--color-calendar-graph-day-L3-bg) !important;
+  border-color: var(--color-calendar-graph-day-L3-bg) !important;
+  fill: var(--color-calendar-graph-day-L3-bg) !important;
+}
+
+.ContributionCalendar-day[data-level='2'] {
+  background-color: var(--color-calendar-graph-day-L2-bg) !important;
+  border-color: var(--color-calendar-graph-day-L2-bg) !important;
+  fill: var(--color-calendar-graph-day-L2-bg) !important;
+}
+
+.ContributionCalendar-day[data-level='1'] {
+  background-color: var(--color-calendar-graph-day-L1-bg) !important;
+  border-color: var(--color-calendar-graph-day-L1-bg) !important;
+  fill: var(--color-calendar-graph-day-L1-bg) !important;
+}
+
+.dark-theme.theme-orange {
+  --color-calendar-graph-day-L4-bg: #f8e07a;
+  --color-calendar-graph-day-L3-bg: #ea8137;
+  --color-calendar-graph-day-L2-bg: #b05c2d;
+  --color-calendar-graph-day-L1-bg: #5b210c;
+}
+
+.light-theme.theme-orange {
+  --color-calendar-graph-day-L4-bg: #6b3d2c;
+  --color-calendar-graph-day-L3-bg: #b96b40;
+  --color-calendar-graph-day-L2-bg: #f6934d;
+  --color-calendar-graph-day-L1-bg: #f7c57b;
+}
+
+.dark-theme.theme-green {
+  --color-calendar-graph-day-L4-bg: #6cd064;
+  --color-calendar-graph-day-L3-bg: #52a44e;
+  --color-calendar-graph-day-L2-bg: #2e6b38;
+  --color-calendar-graph-day-L1-bg: #1f432b;
+}
+
+.light-theme.theme-green {
+  --color-calendar-graph-day-L4-bg: #386c3e;
+  --color-calendar-graph-day-L3-bg: #549f57;
+  --color-calendar-graph-day-L2-bg: #69c16e;
+  --color-calendar-graph-day-L1-bg: #ace7ae;
+}
+
+.dark-theme.theme-blue {
+  --color-calendar-graph-day-L4-bg: #7acbf8;
+  --color-calendar-graph-day-L3-bg: #3794ea;
+  --color-calendar-graph-day-L2-bg: #2d61b0;
+  --color-calendar-graph-day-L1-bg: #0c3a5b;
+}
+
+.light-theme.theme-blue {
+  --color-calendar-graph-day-L4-bg: #38536c;
+  --color-calendar-graph-day-L3-bg: #54849f;
+  --color-calendar-graph-day-L2-bg: #69b6c1;
+  --color-calendar-graph-day-L1-bg: #ace7dc;
+}
+
+.dark-theme.theme-purple {
+  --color-calendar-graph-day-L4-bg: #aa7af8;
+  --color-calendar-graph-day-L3-bg: #a637ea;
+  --color-calendar-graph-day-L2-bg: #6f2db0;
+  --color-calendar-graph-day-L1-bg: #380c5b;
+}
+
+.light-theme.theme-purple {
+  --color-calendar-graph-day-L4-bg: #65386c;
+  --color-calendar-graph-day-L3-bg: #9f548a;
+  --color-calendar-graph-day-L2-bg: #bf69c1;
+  --color-calendar-graph-day-L1-bg: #e7ace5;
 }
