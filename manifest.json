@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GitHub Contribution Graph Themes",
-  "version": "1.0",
+  "version": "0.0.1",
   "description": "Change the color of your GitHub contribution graph",
   "icons": {
     "16": "images/icon-16.png",
